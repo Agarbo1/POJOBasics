@@ -14,6 +14,7 @@ keysInObject(foods); // => ["apple", "lemon", "mango"]
 
 function keysInObject(obj) {
   console.log("what's up Manni?")
+  console.log("Hello Alex")
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
