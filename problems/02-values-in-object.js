@@ -18,7 +18,7 @@ function valuesInObject(obj) {
   for (let values in obj){
     valuesArr.push(obj[values]);
   }
-  console.log(valuesArr);
+  return valuesArr;
 
 };
 
@@ -26,7 +26,7 @@ function valuesInObject(obj) {
 
 function valuesInObject(obj){
 
-  console.log(Object.values(obj));
+  return Object.values(obj);
 };
 
 let animals = {dog: "Wolfie", cat: "Jet", bison: "Bilbo"}

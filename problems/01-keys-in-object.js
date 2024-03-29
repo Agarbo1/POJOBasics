@@ -19,12 +19,12 @@ function keysInObject(obj) {
   for (let item in obj) {
     keys.push(item);
   }
-  console.log(keys);
+  return keys;
 }
 //*********Object.keys()*********
 
 function keysInObject(obj){
-  console.log(Object.keys(obj));
+  return Object.keys(obj);
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
