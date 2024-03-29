@@ -31,18 +31,20 @@ function countScores(people) {
   // Your code here
   let totalScore = {};
 
-  for(let i = 0; i < people.length; i++){
-    let person = people[i];
-    for(let name in person){
-      if(person.name !== totalScore[person.name]){
-        totalScore[person.name] = person.score;
+  // for(let i = 0; i < people.length; i++){
+  //   let person = people[i];
+    for(let person of people){
+      let name = person.name;
+      let score = person.score;
+      if (totalScore[name] === undefined){
+        totalScore[name] = score;
       }
-      else{
-        totalScore[person.name] += person.score;
+      else {
+        totalScore[name] += score;
       }
     }
 
-  }
+  // }
   return totalScore;
 };
 
